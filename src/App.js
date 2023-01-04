@@ -1,4 +1,5 @@
 import './scss/main.scss';
+import './js/main.js';
 import Header from './views/Header'
 import About from './views/About'
 import Service from './views/Service'

@@ -2,4 +2,36 @@
     position: relative;
     padding: 120px 0px 90px 0px;
     background: linear-gradient( 135deg, rgba(0, 136, 232, 1) 0%, rgba(0, 182, 198, 1) 0%, rgba(0, 136, 232, 1) 100% );
+
+    .carousel{
+        // white-space: nowrap;
+
+        .cards{
+            background-color: colors.$white_color;
+            width: 30%;
+            height: 400px;
+            text-align: center;
+            padding: 40px 30px;
+            box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
+            cursor: pointer;
+    
+            img{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                padding: 25px;
+                background-color: colors.$green_color;
+            }
+            
+            h5{
+                padding: 30px 0;
+            }
+    
+            p{
+                color: colors.$txt_color;
+                line-height: 1.7;
+            }
+        }
+    }
+
 }
