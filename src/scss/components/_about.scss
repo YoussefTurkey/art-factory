@@ -1,0 +1,46 @@
+.about_top{
+    border-bottom: 1px solid #eee;
+    padding: 50px 0;
+
+    p{
+        color: colors.$txt_color;
+        line-height: 1.7;
+    }
+
+    button{
+        background-color: colors.$green_color;
+        color: colors.$white_color;
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 7.5px 15px;
+        transition: all 0.3 ease;
+
+        &:hover{
+            color: colors.$white_color;
+            background-color: colors.$blue_color;
+        }
+    }
+}
+
+.about_bottom{
+    padding: 50px 0;
+
+    .disc{
+        color: colors.$txt_color;
+        line-height: 1.7;
+    }
+
+    .term{
+        display: flex;
+        align-items: flex-start;
+        
+        .txt{
+            padding-left: 25px;
+
+            p{
+                color: colors.$txt_color;
+                line-height: 1.7;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.welcome_area{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    z-index: 1;
+
+    .row{
+        display: flex;
+        align-items: center;
+
+        .welcome_txt{
+            h1{
+                font-size: 70px;
+                color: colors.$white_color;
+                
+                strong{
+                    display: block;
+                }
+            }
+
+            p{
+                color: colors.$white_color;
+            }
+
+            button{
+                background-color: colors.$red_color;
+                color: colors.$white_color;
+                border-radius: 20px;
+                font-size: 14px;
+                padding: 7.5px 15px;
+                transition: all 0.3 ease;
+
+                &:hover{
+                    background-color: colors.$blue_color;
+                }
+            }
+        }
+    }
+}
