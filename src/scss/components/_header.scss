@@ -58,3 +58,14 @@
         }
     }
 }
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: colors.$white_color;
+    &:hover{
+        color: colors.$red_color
+    }
+}
+.navbar-nav .nav-link.active{
+    color: colors.$red_color !important;
+    font-weight: 500;
+}
