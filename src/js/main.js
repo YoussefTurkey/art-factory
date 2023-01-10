@@ -19,3 +19,21 @@ $(document).ready(function() {
     })
 })
 
+$(function(){ 
+	var offset = 200;
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > offset ) {
+			$('.gototop').css('opacity', '1');
+			$('.gototop').css('visibility', 'visible');
+		} else if($(this).scrollTop() <= offset) {
+			$('.gototop').css('opacity', '0');
+			$('.gototop').css('visibility', 'hidden');
+		}
+	});
+		
+	$('.gototop').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({scrollTop: 0}, 300);
+		return false;
+	});
+});

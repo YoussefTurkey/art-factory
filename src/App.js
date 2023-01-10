@@ -12,6 +12,12 @@ function App() {
       <Header />
       <About />
       <Service />
+
+      <div class="gototop js-top">
+        <a href="#" class="js-gotop">
+          <i class='bx bxs-chevrons-up'></i>
+        </a>
+      </div>
     </>
   );
 }

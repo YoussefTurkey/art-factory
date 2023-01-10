@@ -44,4 +44,30 @@
             }
         }
     }
+
+    .go_down{
+        background: -webkit-linear-gradient(274deg ,var(--first-color), var(--second-color));
+        -webkit-text-fill-color: colors.$white_color;
+        -webkit-background-clip: text;
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: var(--trans);
+        animation: bouncing 1.5s infinite;
+        z-index: 10;
+
+        i{
+            font-size: 50px;
+        }
+    }
+}
+
+@keyframes bouncing {
+    0%, 10%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%, 60%{
+        transform: translateY(-10px);
+    }
 }

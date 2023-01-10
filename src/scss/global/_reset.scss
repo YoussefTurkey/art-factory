@@ -24,22 +24,66 @@ a{
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: colors.$red_color colors.$white_color;
-  }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: colors.$red_color colors.$white_color;
+}
 
   /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: colors.$red_color;
+  border-radius: 10px;
+  border: 3px solid colors.$white_color;
+}
+
+.gototop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  border-radius: 4px;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
   }
 
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
+  a {
+    text-decoration: none;
+    width: 50px;
+    height: 70px;
+    display: table;
+    background: colors.$red_color;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: none;
 
-  *::-webkit-scrollbar-thumb {
-    background-color: colors.$red_color;
-    border-radius: 10px;
-    border: 3px solid colors.$white_color;
+    &:hover,
+    &:active,
+    &:focus{
+      text-decoration: none;
+      outline: none;
+    }
+    
+    i {
+      height: 50px;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 30px;
+      color: colors.$white_color;
+    }
   }
+} 

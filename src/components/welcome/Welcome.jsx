@@ -24,6 +24,10 @@ const Welcome = () => {
                         <img src={slider} alt="" />
                     </div>
                 </div>
+
+                <a href="#about" class="go_down">
+                    <i class='bx bxs-chevrons-down'></i>
+                </a>
             </div>
         </div>
     </>
