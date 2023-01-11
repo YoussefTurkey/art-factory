@@ -1,0 +1,39 @@
+.freq{
+    margin: 55px 0;
+    .title{
+        text-align: center;
+        h2{
+            font-size: 45px;
+            font-weight: 300;
+        }
+        p{
+            font-size: 18px;
+            color: colors.$txt_color;
+            width: 50%;
+            margin: auto;
+            padding: 20px 0 30px 0;
+        }
+    }
+    .details{
+        h4{
+            font-size: 30px;
+            color: colors.$black_color;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        p{
+            width: 70%;
+            font-size: 18px;
+            color: colors.$txt_color;
+        }
+        .submit{
+            background-color: colors.$green_color;
+            color: colors.$white_color;
+            border-radius: 20px;
+            border: 1px solid colors.$green_color;
+            font-size: 14px;
+            padding: 7.5px 20px;
+            transition: all 0.3 ease;
+        }
+    }
+}

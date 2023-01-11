@@ -5,6 +5,9 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Header from './views/Header'
 import About from './views/About'
 import Service from './views/Service'
+import Frequently from './views/Frequently'
+import Map from './views/Map'
+import Footer from './views/Footer';
 
 function App() {
   return (
@@ -12,10 +15,13 @@ function App() {
       <Header />
       <About />
       <Service />
+      <Frequently />
+      <Map />
+      <Footer />
 
-      <div class="gototop js-top">
-        <a href="#" class="js-gotop">
-          <i class='bx bxs-chevrons-up'></i>
+      <div className="gototop js-top">
+        <a href="#" className="js-gotop">
+          <i className='bx bxs-chevrons-up'></i>
         </a>
       </div>
     </>
